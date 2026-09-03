@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayush Agarwal — Portfolio</title>
+  <meta name="description" content="Portfolio of Ayush Agarwal, B.Tech Computer Science student and aspiring software developer." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="#home" class="logo">Ayush Agarwal</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="resume.html" class="nav-link" target="_blank" rel="noopener">Resume</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-greeting">Hi, I'm Ayush Agarwal</p>
+          <h1 class="hero-title">B.Tech CSE Student &amp; Aspiring Software Developer</h1>
+          <p class="hero-desc">
+            I'm a Computer Science student interested in software development, web development,
+            databases, and problem solving. I enjoy building practical projects and continuously
+            improving my programming skills.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-profile">
+          <div class="profile-frame">
+            <img src="./images/profile_photo.jpeg" alt="Ayush Agarwal" class="profile-photo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <p>
+            I'm currently pursuing my B.Tech in Computer Science Engineering. Over the past couple
+            of years, I've been learning and working with languages and tools like Java, C++,
+            JavaScript, HTML, and CSS, along with MySQL for database work and Node.js for building
+            backend logic. I use Git and GitHub to manage and share my projects.
+          </p>
+          <p>
+            Outside of coursework, I like picking up small projects to apply what I've learned —
+            whether that's a booking system, a UI clone, or an algorithm comparison. I'm still
+            learning and figuring things out, but I enjoy the process of building things that work.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3 class="skill-group-title">Programming</h3>
+            <ul class="tag-list">
+              <li class="tag">Java</li>
+              <li class="tag">C++</li>
+              <li class="tag">JavaScript</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Web Development</h3>
+            <ul class="tag-list">
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+              <li class="tag">JavaScript</li>
+              <li class="tag">Node.js</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Database</h3>
+            <ul class="tag-list">
+              <li class="tag">MySQL</li>
+              <li class="tag">DBMS</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Tools</h3>
+            <ul class="tag-list">
+              <li class="tag">Git</li>
+              <li class="tag">GitHub</li>
+              <li class="tag">VS Code</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-body">
+              <h3 class="project-title">Campus Facility Booking System</h3>
+              <p class="project-desc">
+                A web-based system designed to manage and book campus facilities efficiently.
+                The project focuses on facility management, booking workflows, and database
+                organization.
+              </p>
+              <ul class="tech-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ayushagar0101-svg" class="btn btn-outline btn-small">GitHub</a>
+              <!-- <a href="YOUR_LIVE_DEMO_URL" class="btn btn-outline btn-small">Live Demo</a> -->
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-body">
+              <h3 class="project-title">Hotel Booking Website</h3>
+              <p class="project-desc">
+                A responsive hotel booking website interface designed to provide users with a
+                simple experience for exploring hotels and making bookings.
+              </p>
+              <ul class="tech-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ayushagar0101-svg" class="btn btn-outline btn-small">GitHub</a>
+              <!-- <a href="YOUR_LIVE_DEMO_URL" class="btn btn-outline btn-small">Live Demo</a> -->
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-body">
+              <h3 class="project-title">Sorting Algorithm Project</h3>
+              <p class="project-desc">
+                A JAVA project that implements and compares sorting algorithms such as Bubble
+                Sort, Selection Sort, and Quick Sort by measuring their execution time on
+                different input sizes.
+              </p>
+              <ul class="tech-list">
+                <li>JAVA</li>
+              </ul>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ayushagar0101-svg" class="btn btn-outline btn-small">GitHub</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+
+        <div class="education-card">
+          <div class="education-period">2025 &ndash; Present</div>
+          <div class="education-details">
+            <h3 class="education-degree">B.Tech &ndash; Computer Science &amp; Engineering</h3>
+            <p class="education-institute">ITM University, Gwalior</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <h2 class="section-title">Certifications &amp; Learning</h2>
+
+        <div class="cert-list">
+          <div class="cert-item">
+            <h3 class="cert-title">Google Generative AI</h3>
+            <p class="cert-issuer">Google Skills</p>
+          </div>
+          <div class="cert-item">
+            <h3 class="cert-title">DBMS</h3>
+            <p class="cert-issuer">Scaler</p>
+          </div>
+          <div class="cert-item">
+            <h3 class="cert-title">Google Reponsive AI</h3>
+            <p class="cert-issuer">Google Skills</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub / LinkedIn Section -->
+    <section id="find-me" class="section section-alt">
+      <div class="container find-me-inner">
+        <h2 class="section-title">Find My Work</h2>
+        <p class="find-me-desc">
+          Take a look at my code and projects, or connect with me for opportunities and
+          collaboration.
+        </p>
+        <div class="hero-actions">
+          <a href="https://github.com/ayushagar0101-svg" class="btn btn-primary">GitHub</a>
+          <a href="https://www.linkedin.com/in/ayush-agarwal-a93228380/" class="btn btn-secondary">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p><span class="contact-label">Email:</span> <a href="mailto:YOUR_EMAIL">ayushagar0101@gmail.com</a></p>
+            <p><span class="contact-label">GitHub:</span> <a href="https://github.com/ayushagar0101-svg">https://github.com/ayushagar0101-svg</a></p>
+            <p><span class="contact-label">LinkedIn:</span> <a href="https://www.linkedin.com/in/ayush-agarwal-a93228380/">https://www.linkedin.com/in/ayush-agarwal-a93228380/</a></p>
+          </div>
+
+          <!-- <form class="contact-form" id="contactForm" novalidate>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+
+            <p class="form-note" id="formNote" role="status"></p>
+          </form> -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Ayush Agarwal. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/ayushagar0101-svg">GitHub</a>
+        <a href="https://www.linkedin.com/in/ayush-agarwal-a93228380/">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
