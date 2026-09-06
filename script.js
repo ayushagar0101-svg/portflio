@@ -50,18 +50,20 @@ revealTargets.forEach((el) => revealObserver.observe(el));
 const contactForm = document.getElementById('contactForm');
 const formNote = document.getElementById('formNote');
 
-contactForm.addEventListener('submit', (event) => {
-  event.preventDefault();
+if (contactForm && formNote) {
+  contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
 
-  formNote.textContent = 'Thanks! Please contact me directly through email.';
+    formNote.textContent = 'Thanks! Please contact me directly through email.';
 
-  contactForm.reset();
+    contactForm.reset();
 
-  // Clear the message after a few seconds
-  setTimeout(() => {
-    formNote.textContent = '';
-  }, 5000);
-});
+    // Clear the message after a few seconds
+    setTimeout(() => {
+      formNote.textContent = '';
+    }, 5000);
+  });
+}
 
 // =========================================================
 // Navbar background on scroll
