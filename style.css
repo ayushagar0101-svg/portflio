@@ -150,9 +150,19 @@ ul {
   box-shadow: 0 8px 18px rgba(224, 93, 63, 0.2);
 }
 
+.main_btn{
+   background-color: var(--color-primary);
+  color: white;
+}
+.main_btn:hover{
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(161, 150, 148, 0.26);
+}
+
 .btn-primary {
   background-color: var(--color-primary);
-  color: #ffffff;
+  color: white;
 }
 
 .btn-primary:hover {
@@ -163,7 +173,7 @@ ul {
 
 .btn-secondary {
   background-color: transparent;
-  color: var(--color-text);
+  color: whitesmoke;
   border-color: var(--color-border);
 }
 
@@ -536,6 +546,57 @@ ul {
   padding: 0 var(--space-3) var(--space-3);
 }
 
+/* images_scroll */
+
+.slider{
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.slides{
+  display: flex;
+  width: 400%;
+  animation:alternate 2ms infinite;
+}
+.slides img{
+  width: 25%;
+  height: 350px;
+  object-fit: cover;
+}
+@keyframes slide {
+  0%{
+    transform: translateX(0);
+  }
+  20%{
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-25%);
+  }
+  45% {
+    transform: translateX(-25%);
+  }
+  50% {
+    transform: translateX(-25%);
+  }
+  70% {
+    transform: translateX(-25%);
+  }
+  75% {
+    transform: translateX(-25%);
+  }
+  95% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(-25%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
 /* =========================================================
    EDUCATION
    ========================================================= */
@@ -673,46 +734,7 @@ ul {
   color: var(--color-primary);
 }
 
-/* .contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-1);
-}
 
-.contact-form label {
-  font-size: 0.88rem;
-  font-weight: 500;
-  margin-top: var(--space-1);
-}
-
-.contact-form input,
-.contact-form textarea {
-  font-family: var(--font-main);
-  font-size: 0.95rem;
-  padding: 10px 12px;
-  border: 1px solid var(--color-border);
-  border-radius: 6px;
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  transition: border-color var(--transition);
-  resize: vertical;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: var(--color-primary);
-}
-
-.contact-form button {
-  margin-top: var(--space-2);
-  align-self: flex-start;
-}
-
-.form-note {
-  font-size: 0.88rem;
-  color: var(--color-primary);
-  min-height: 1.2em;
-} */
 
 /* =========================================================
    FOOTER
